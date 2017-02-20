@@ -18,4 +18,16 @@ export class App {
       Splashscreen.hide();
     });
   }
+
+  openMain() {
+      this.nav.push(MainPage);
+  }
+
+  openPlaylist() {
+      console.log("Open Playlist page...");
+  }
+
+  openSettings() {
+        console.log("Open Settings page...");
+  }
 }

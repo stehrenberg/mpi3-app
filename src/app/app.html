@@ -4,16 +4,16 @@
             <ion-title>Menü</ion-title>
         </ion-toolbar>
         <ion-list>
-            <ion-item>
+            <ion-item (click)="openMain()" menuClose>
                 <ion-icon name="alarm">
                 </ion-icon>
                 Wecker-Setup
             </ion-item>
-            <ion-item>
+            <ion-item (click)="openPlaylist()" menuClose>
                 <ion-icon name="musical-notes"></ion-icon>
                 Playlist erstellen
             </ion-item>
-            <ion-item>
+            <ion-item (click)="openSettings()" menuClose>
                 <ion-icon name="construct"></ion-icon>
                 Einstellungen
             </ion-item>
