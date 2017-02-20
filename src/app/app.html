@@ -1,30 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle="left-menu" icon-only>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title text-center>MPi3 Äpp!</ion-title>
+        <!--<ion-buttons right>-->
+            <!--<button ion-button primary icon-only>-->
+                <!--<ion-icon name="cart"></ion-icon>-->
+            <!--</button>-->
+        <!--</ion-buttons>-->
+    </ion-navbar>
+</ion-header>
+
 <ion-menu id="left-menu" [content]="content">
-    <ion-header>
-        <ion-toolbar>
-            <ion-title>Menü</ion-title>
-        </ion-toolbar>
-        <ion-list>
-            <ion-item (click)="openMain()" menuClose>
-                <ion-icon name="alarm">
-                </ion-icon>
-                Wecker-Setup
-            </ion-item>
-            <ion-item (click)="openPlaylist()" menuClose>
-                <ion-icon name="musical-notes"></ion-icon>
-                Playlist erstellen
-            </ion-item>
-            <ion-item (click)="openSettings()" menuClose>
-                <ion-icon name="construct"></ion-icon>
-                Einstellungen
-            </ion-item>
-        </ion-list>
-    </ion-header>
-
-    <ion-content>
-    </ion-content>
-
+    <ion-toolbar>
+        <ion-title>Menü</ion-title>
+    </ion-toolbar>
+    <ion-list>
+        <ion-item (click)="openMain()" menuClose>
+            <ion-icon name="alarm">
+            </ion-icon>
+            Wecker-Setup
+        </ion-item>
+        <ion-item (click)="openPlaylist()" menuClose>
+            <ion-icon name="musical-notes"></ion-icon>
+            Playlist erstellen
+        </ion-item>
+        <ion-item (click)="openSettings()" menuClose>
+            <ion-icon name="construct"></ion-icon>
+            Einstellungen
+        </ion-item>
+    </ion-list>
 </ion-menu>
 
 <ion-nav [root]="rootPage"></ion-nav>
 
-<ion-content padding #content>App Seite :)</ion-content>
+<ion-content padding #content>App Seite :)
+</ion-content>
